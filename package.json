@@ -1,0 +1,55 @@
+{
+  "name": "prism-oceanic-next",
+  "version": "0.0.0-development",
+  "description": "Oceanic Next syntax highlighting theme for Prism and Gatsby",
+  "license": "MIT",
+  "author": "Adrian Perez adrian@adrianperez.org",
+  "files": [
+    "src/oceanic-next.css"
+  ],
+  "main": "src/oceanic-next.css",
+  "repository": {
+    "url": "https://github.com/blackxored/prism-oceanic-next"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "commit": "commit",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "semantic-release": "semantic-release",
+    "test": "stylelint src/oceanic-next.css",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "config": {
+    "commitzen": {
+      "path": "@commitlint/prompt"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@commitlint/config-conventional": "^5.2.3",
+    "all-contributors-cli": "^4.6.0",
+    "commitizen": "^2.9.6",
+    "cross-env": "^2.0.1",
+    "husky": "^0.14.3",
+    "jest": "^22.1.0",
+    "lint-staged": "^7.0.4",
+    "semantic-release": "^15.1.7",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "travis-deploy-once": "^4.4.1"
+  },
+  "engines": {
+    "node": "> 4",
+    "npm": "> 3"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ]
+  },
+  "quokka": {
+    "babel": true
+  }
+}
