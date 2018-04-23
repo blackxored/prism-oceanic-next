@@ -1,5 +1,7 @@
 # prism-oceanic-next
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blackxored/prism-oceanic-next.svg)](https://greenkeeper.io/)
+
 > Oceanic Next syntax highlighting theme for Prism and Gatsby
 
 [![Semantically Released][semantic-release-badge]][semantic-release]
